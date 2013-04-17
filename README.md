@@ -1,0 +1,4 @@
+jmvc
+====
+
+Generators for JavaScriptMVC
