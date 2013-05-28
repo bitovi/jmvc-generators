@@ -1,8 +1,8 @@
 steal('can', function (can) {
 	/**
-	 * @class <%= module %>
+	 * @class <%= appName %>/models/<%= underscore %>
 	 * @alias <%= Alias %>
-	 * @parent index
+	 * @parent <%= appName %>
 	 * @inherits can.Model
 	 *
 	 * Wraps backend <%= underscore %> services.
@@ -10,10 +10,25 @@ steal('can', function (can) {
 	return can.Model(
 	/* @static */
 	{
+		/**
+ 		 * Find all <%= pluralAlias %>
+		 */
 		findAll : "GET /<%= pluralAlias %>",
+		/**
+ 		 * Find one <%= underscore %>
+		 */
 		findOne : "GET /<%= pluralAlias %>/{id}",
+		/**
+ 		 * Create a <%= underscore %>
+		 */
 		create : "POST /<%= pluralAlias %>",
+		/**
+		 * Update a <%= underscore %>
+		 */
 		update : "PUT /<%= pluralAlias %>/{id}",
+		/**
+		 * Destroy a <%= underscore %>
+		 */
 		destroy : "DELETE /<%= pluralAlias %>/{id}"
 	},
 	/* @Prototype */
