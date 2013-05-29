@@ -3,7 +3,7 @@
 @description JavaScriptMVC comes with the following generators:
 
 
-@signature `js jmvc/generate/app path [OPTIONS]`
+@signature `js jmvc/generate/app path`
 
 @param {String} path The lowercase directory your application
     will be placed within. Keep application names short because they 
@@ -13,14 +13,14 @@
 Creates a JavaScriptMVC application structure.
 
 
-@signature `js jmvc/generate/control app/controls/video [OPTIONS]`
+@signature `js jmvc/generate/control app/controls/video`
 
 @param {String} app/controls/video The moduleId name of your control. 
 
 Creates a [can.Control] and test files.
 
 
-@signature `js jmvc/generate/model app/models/name [OPTIONS]`
+@signature `js jmvc/generate/model app/models/name`
 
 @param {String} `app/models/name`  The name of the model.
 
@@ -35,14 +35,14 @@ Creates a [can.Model] and test files.
 Creates a page that loads steal.js and an application.
 
 
-@signature `js jmvc/generate/plugin path/to/plugin [OPTIONS]`
+@signature `js jmvc/generate/plugin path/to/plugin`
 
 @param path/to/plugin The path to where you want your plugin. 
 
 Create a file and folder structure for a basic jQuery plugin.
 
 
-@signature `js jmvc/generate/scaffold app/models/modelname [OPTIONS]`
+@signature `js jmvc/generate/scaffold app/models/modelname`
 
 @param {String} app/models/modelname The moduleId of you want to create CRUD functionality for.
 
